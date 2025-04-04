@@ -5,8 +5,8 @@ test.describe('keyTagDragDrop', async () => {
     test('KeyTag - Action', async ({ keyTagDragDrop }) => {
         await keyTagDragDrop.keyTag()
     })
-    test("Tag Box", async ({ keyTagDragDrop }) => {
-        await keyTagDragDrop.tagbox()
+    test("Tag Box", async ({ tagbox }) => {
+        await tagbox.tagbox()
     })
 
     test.afterEach('Test Closure', async ({ keyTagDragDrop }) => {
