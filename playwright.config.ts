@@ -16,6 +16,8 @@ export default defineConfig({
 
   testDir: './tests',
   /* Run tests in files in parallel */
+
+  
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
@@ -26,7 +28,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html'],
-    ['json', { outputFile: 'testResults/Report.json' }],
+    ['json', { outputFile: 'test-results/JsonReport.json' }],
     ['dot'],
     ['line']
   ],
