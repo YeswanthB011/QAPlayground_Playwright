@@ -3,6 +3,7 @@ import { KeyTagDragandDrop } from '../PageObjects/KeyTagDragDrop'
 
 export type TestFixture={
     keyTagDragDrop: KeyTagDragandDrop
+    tagbox:KeyTagDragandDrop
     keyTagDragDropURL: string
     tagboxURL:string
 
@@ -22,10 +23,19 @@ export const test = base.extend<TestFixture>({
         await use('')
 
     },
-    keyTagDragDrop: async ({ page, keyTagDragDropURL,tagboxURL }, use) => {
+    keyTagDragDrop: async ({ page, keyTagDragDropURL }, use) => {
+        
+        const keyTagDragDrop = new KeyTagDragandDrop(page)
+        await use(keyTagDragDrop)
+
+    },
+    tagbox: async ({ page, tagboxURL }, use) => {
+        
         const keyTagDragDrop = new KeyTagDragandDrop(page)
         await use(keyTagDragDrop)
 
     }
+  
+  
 
 })
