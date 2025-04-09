@@ -1,5 +1,5 @@
 import { Page, Locator, expect } from '@playwright/test'
-import { urlToHttpOptions } from 'url'
+
 
 export class KeyTagDragandDrop {
 
@@ -13,7 +13,7 @@ export class KeyTagDragandDrop {
     constructor(page: Page) {
         this.page = page
         this.elementPath = page.locator('.code')
-        this.message = page.locator('.info success')
+        this.message = page.getByText('Success')
         this.InputBox = page.locator('[type="text"]')
         this.Remaining = page.locator("//div[@class='details']/p/span")
         this.remove = page.locator("//button[contains(text(),'Remove All')]")

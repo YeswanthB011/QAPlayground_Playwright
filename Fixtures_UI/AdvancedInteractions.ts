@@ -9,12 +9,16 @@ export type testFixture = {
 export const test = base.extend<testFixture>({
 
     AdvancedURL: async ({ page }, use) => {
-        await page.goto()
+        await page.goto('https://qaplayground.dev/')
+        await use('')
+
 
     },
 
-    AdvancedInteractions: async ({ page }, use) => {
+    AdvancedInteractions: async ({ page, AdvancedURL }, use) => {
         const AdvancedInteractions = new advancedInteractions(page)
         await use(AdvancedInteractions)
     }
+
+
 })

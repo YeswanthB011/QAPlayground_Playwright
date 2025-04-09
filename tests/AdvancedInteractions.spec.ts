@@ -1,7 +1,22 @@
-import {test} from '@playwright/test'
+import { test } from '../Fixtures_UI/AdvancedInteractions'
+import { advancedInteractions } from '../PageObjects/AdvancedInteractions'
 
-//test.descibe('Newtab', async({page})=>{
 
-    
-    
-//})
+test.describe('Interactions', async () => {
+    test('NewTab', async ({ AdvancedInteractions }) => {
+        await AdvancedInteractions.newtab()
+    })
+
+    test("popup", async ({ AdvancedInteractions }) => {
+        await AdvancedInteractions.popup()
+    })
+
+    test("Nested Frame", async ({ AdvancedInteractions }) => {
+        await AdvancedInteractions.nestedFrame()
+    })
+
+    test("ShadowDOM", async ({ AdvancedInteractions }) => {
+        await AdvancedInteractions.ShadowDOM()
+    })
+
+})

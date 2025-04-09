@@ -15,17 +15,12 @@ This repository contains automated test scripts for a QA Playground platform. Th
 
 | User Story                                |  Status(Completed/InProgress)                             |
 |-------------------------------------------|-----------------------------------------------------------|
-| [US01: WebTable Validation]()             |                                                           |            
+| [US01: WebTable Validation]()             |  Completed                                                |
+| [US02: KeyTagDrag&Drop Validation]()      |  Completed                                                | 
+| [US03: Advanced Interactions]()           |  Completed                                                |
+| [US04: Interactions]()                    |  Completed                                                |           
 
-
-## User Story Summary:
-
-- US01 | Dynamic webtable of superheroes and their status validation:
-        - Check how many Avengers are there in the web table.
-        - Validate the real names with a prebuilt hashmap.
-        - Check if anyone's status is inactive and print the name if the status is 'SH'.
-        - Validate that all 'SH's email IDs end with '@avengers'. 
-
+--FTA user story document for more details.
 
 ## Prerequisites
 
@@ -62,11 +57,11 @@ npx playwright test
 ```
 
 ## Writing Tests
-tests/: This directory contains your test files. Each test file typically ends with .spec.ts.
-pages/: This directory contains your Page Object Model (POM) classes. Each page class represents a page in your application.
-playwright.config.ts: This is the Playwright configuration file where you can set up your test environment, browser options, and other settings.
-package.json: This file contains the metadata for your project, including dependencies and scripts.
-tsconfig.json: This is the TypeScript configuration file.
+-tests/: This directory contains your test files. Each test file typically ends with .spec.ts.
+-pages/: This directory contains your Page Object Model (POM) classes. Each page class represents a page in your application.
+-playwright.config.ts: This is the Playwright configuration file where you can set up your test environment, browser options, and other settings.
+-package.json: This file contains the metadata for your project, including dependencies and scripts.
+-tsconfig.json: This is the TypeScript configuration file.
 
 ## Reporting
 For now just using inbuilt report generation in HTML, JSON, DOT, LINE and XML.
