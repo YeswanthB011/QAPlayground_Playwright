@@ -44,8 +44,11 @@ export class Interactions {
         await fifthpage
         await sixthpage
         await lastpage
-        await this.page.waitForSelector('#info')
-        expect(this.page.locator('#info')).toBeVisible()
+
+        await this.page.waitForSelector('#info', { state: 'visible' });
+        expect(await this.page.locator('#info').innerText()).toBe('Welcome to the Last Page');
+
+
 
 
     }
