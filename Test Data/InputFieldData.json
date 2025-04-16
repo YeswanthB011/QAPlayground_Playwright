@@ -1,0 +1,91 @@
+{
+    "Required Field": [
+        {
+            "data": " "
+        }
+    ],
+    "text String": [
+        {
+            "id": 1,
+            "data": "testdata"
+        },
+        {
+            "id": 2,
+            "data": "111"
+        },
+        {
+            "id": 3,
+            "data": "___"
+        },
+        {
+            "id": 4,
+            "data": "------"
+        },
+        {
+            "id": 5,
+            "data": "validdata123_4"
+        },
+        {
+            "id": 6,
+            "data": "test@"
+        },
+        {
+            "id": 7,
+            "data": "valid-data"
+        },
+        {
+            "id": 8,
+            "data": "valid_data"
+        },
+        {
+            "id": 9,
+            "data": "valid123"
+        },
+        {
+            "id": 10,
+            "data": "invalid#data"
+        },
+        {
+            "id": 11,
+            "data": "invalid data"
+        },
+        {
+            "id": 12,
+            "data": "valid-data-123"
+        }
+    ],
+    "Text Length Limits BVA": [
+        {
+            "id": 1,
+            "data": "a"
+        },
+        {
+            "id": 2,
+            "data": "ab"
+        },
+        {
+            "id": 3,
+            "data": "abc"
+        },
+        {
+            "id": 4,
+            "data": "abcdefghijklmnopqrstu1-_"
+        },
+        {
+            "id": 5,
+            "data": "abcdefghijklmnopqrstuv1-_"
+        },
+        {
+            "id": 6,
+            "data": "abcdefghijklmnopqrstuvw_-1"
+        },
+        {
+            "id": 7,
+            "data": ""
+        },
+        {
+            "id": 8,
+            "data": "-1"
+        }
+    ]
+}

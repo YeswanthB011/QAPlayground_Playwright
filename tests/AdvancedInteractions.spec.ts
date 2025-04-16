@@ -1,5 +1,4 @@
 import { test } from '../Fixtures_UI/AdvancedInteractions'
-import { advancedInteractions } from '../PageObjects/AdvancedInteractions'
 
 
 test.describe('Interactions', async () => {
