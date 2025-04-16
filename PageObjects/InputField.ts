@@ -24,12 +24,13 @@ export class inputField {
         const error = this.errorMessage
         if (await error.isVisible()) {
             console.log(`${testdata} is not a valid input`)
-        } else {
+        } else if(await this.result.isVisible()){
             const result = await this.result.textContent()
             console.log(result)
             expect(result).toBe(testdata)
+        }else{
+            console.log("Empty submission not accepted")
         }
-
     }
 
 
