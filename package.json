@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "This repository contains automated test scripts for a QA Playground platform. The tests are written in Typescript and utilize Playwright with the Page Object Model (POM) design pattern for enhanced maintainability and reusability. The project is structured using Maven for dependency management and build processes.",
   "devDependencies": {
     "@faker-js/faker": "^9.6.0",
     "@playwright/test": "^1.51.1",
@@ -14,5 +14,16 @@
   },
   "dependencies": {
     "qaplayground_playwright": "file:"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YeswanthB011/QAPlayground_Playwright.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YeswanthB011/QAPlayground_Playwright/issues"
+  },
+  "homepage": "https://github.com/YeswanthB011/QAPlayground_Playwright#readme"
 }
