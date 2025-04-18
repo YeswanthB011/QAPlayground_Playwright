@@ -16,10 +16,11 @@ This repository contains automated test scripts for a QA Playground platform. Th
 
 | User Story                                |  Status(Completed/InProgress)                             |
 |-------------------------------------------|-----------------------------------------------------------|
-| [US01: WebTable Validation]()             |  Completed                                                |
-| [US02: KeyTagDrag&Drop Validation]()      |  Completed                                                | 
-| [US03: Advanced Interactions]()           |  Completed                                                |
-| [US04: Interactions]()                    |  Completed                                                |           
+| [US01: WebTable Validation]               |  Completed                                                |
+| [US02: KeyTagDrag&Drop Validation]        |  Completed                                                | 
+| [US03: Advanced Interactions]             |  Completed                                                |
+| [US04: Interactions]                      |  Completed                                                |
+| [US05: InputFiled Validation]            |  Completed                                                | 
 
 --FTA user story document for more details.
 
@@ -45,8 +46,7 @@ npm install playwright
 Clone it using the following command:
 
 ```bash
-# Replace <repository-url> with the URL of your GitHub repository
-git clone <repository-url>
+git clone <https://github.com/YeswanthB011/QAPlayground_Playwright.git>
 ```
 
 ### 4. Run Playwright Tests
@@ -65,7 +65,7 @@ npx playwright test
 -tsconfig.json: This is the TypeScript configuration file.
 
 ## Reporting
-For now just using inbuilt report generation in HTML, JSON, DOT, LINE and XML.
+For now just using inbuilt report generation in HTML, JSON.
 
 ## Acknowledgments
 
