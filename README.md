@@ -1,4 +1,5 @@
 # QA Playground WebApplication
+[![Playwright Tests](https://github.com/YeswanthB011/QAPlayground_Playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/YeswanthB011/QAPlayground_Playwright/actions/workflows/playwright.yml)
 
 This repository contains automated test scripts for a QA Playground platform. The tests are written in Typescript and utilize Playwright with the Page Object Model (POM) design pattern for enhanced maintainability and reusability. The project is structured using Maven for dependency management and build processes.
 
