@@ -58,11 +58,11 @@ npx playwright test
 ```
 
 ## Writing Tests
--tests/: This directory contains your test files. Each test file typically ends with .spec.ts.
--pages/: This directory contains your Page Object Model (POM) classes. Each page class represents a page in your application.
--playwright.config.ts: This is the Playwright configuration file where you can set up your test environment, browser options, and other settings.
--package.json: This file contains the metadata for your project, including dependencies and scripts.
--tsconfig.json: This is the TypeScript configuration file.
+- tests/: This directory contains your test files. Each test file typically ends with .spec.ts.
+- pages/: This directory contains your Page Object Model (POM) classes. Each page class represents a page in your application.
+- playwright.config.ts: This is the Playwright configuration file where you can set up your test environment, browser options, and other settings.
+- package.json: This file contains the metadata for your project, including dependencies and scripts.
+- tsconfig.json: This is the TypeScript configuration file.
 
 ## Reporting
 For now just using inbuilt report generation in HTML, JSON.
