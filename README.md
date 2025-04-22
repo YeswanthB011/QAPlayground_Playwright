@@ -67,5 +67,5 @@ npx playwright test
 ## Reporting
 For now just using inbuilt report generation in HTML, JSON.
 
-## Acknowledgments
+
 
