@@ -11,7 +11,7 @@ test.describe('Interactions', async () => {
     })
 
     test("Nested Frame", async ({ AdvancedInteractions }) => {
-        await AdvancedInteractions.nestedFrame()
+        await AdvancedInteractions.nestedFrame()//interact with frames
     })
 
     test("ShadowDOM", async ({ AdvancedInteractions }) => {
