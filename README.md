@@ -11,7 +11,6 @@ This repository contains automated test scripts for a QA Playground platform. Th
 - **Web Automation Tool:** Playwright
 - **Design Pattern:** Page Object Model (POM)
 - **Version Control:** Git and GitHub
-- **Test Management Tools:** Similar to JIRA, ZEPHYR / XRAY
 - **Data generator Tool:** fakerjs.dev
 
 | User Story                                |  Status(Completed/InProgress)                             |
