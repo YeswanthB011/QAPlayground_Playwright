@@ -1,8 +1,6 @@
 import { test } from '../Fixtures_UI/AdvancedInteractions'
 
-
-test.describe('Interactions', async () => {
-    test('NewTab', async ({ AdvancedInteractions }) => {
+test('NewTab', async ({ AdvancedInteractions }) => {
         await AdvancedInteractions.newtab()
     })
 
@@ -17,5 +15,3 @@ test.describe('Interactions', async () => {
     test("ShadowDOM", async ({ AdvancedInteractions }) => {
         await AdvancedInteractions.ShadowDOM()
     })
-
-})

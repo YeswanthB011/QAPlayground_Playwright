@@ -1,18 +1,22 @@
-import { test } from '../Fixtures_UI/WebTableFixture'
+import { test, expect } from '@playwright/test';
+import { DynamicWebTable } from '../PageObjects/DynamicWebTable';
 
-test.describe("Dynamic WebTable", async () => {
+test.describe('Web Table Tests', () => {
+  test('Avengers Validation', async ({ page }) => {
+    const table = new DynamicWebTable(page);
+    await table.TablePage();
+    await table.AvengersValidation();
+  });
 
-  test('Check the Avengers and Non-Avengers', async ({ dynamicWebTable }) => {
-   await dynamicWebTable.AvengersValidation()
-  })
+  test('Super Hero Status', async ({ page }) => {
+    const table = new DynamicWebTable(page);
+    await table.TablePage();
+    await table.SuperHeroStatus();
+  });
 
-
-  test("Status of the Superhero's", async ({ dynamicWebTable }) => {
-    await dynamicWebTable.SuperHeroStatus()
-
-  })
-  test("Mail id validation", async ({ dynamicWebTable }) => {
-   await dynamicWebTable.MailIdValidation()
-  })
-
-})
+  test('Mail ID Validation', async ({ page }) => {
+    const table = new DynamicWebTable(page);
+    await table.TablePage();
+    await table.MailIdValidation();
+  });
+});

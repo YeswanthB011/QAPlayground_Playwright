@@ -1,14 +1,16 @@
-import { test } from "../Fixtures_UI/Interactions"
+import { test, expect } from '@playwright/test';
+import { Interactions } from '../PageObjects/Interactions';
 
-test.describe('Advanced Interactions_2',async () => {
-    // test('upload file', async ({ interactions }) => {
-    //     try{
-    //     await interactions.uploadFile()
-    //     }catch{
-    //         console.log('Codding issue')
-    //     }
-    // })
-    test('redirection chain validation',async({interactions})=>{
-        await interactions.chainRedirection()
-    })
-})
+test.describe('Interactions Tests', () => {
+  test('Upload File', async ({ page }) => {
+    await page.goto('/');
+    const interactions = new Interactions(page);
+    await interactions.uploadFile();
+  });
+
+  test('Chain Redirection', async ({ page }) => {
+    await page.goto('/');
+    const interactions = new Interactions(page);
+   await interactions.chainRedirection();
+  });
+});
