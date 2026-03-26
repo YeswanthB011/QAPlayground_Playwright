@@ -1,16 +1,16 @@
-import { test } from '../Fixtures_UI/KeyDragDropFixture'
+import { test, expect } from '@playwright/test';
+import { KeyTagDragandDrop } from '../PageObjects/KeyTagDragDrop';
 
+test.describe('Key Tag Drag Drop Tests', () => {
+  test('Key Navigation', async ({ page }) => {
+    await page.goto('/');
+    const keyTag = new KeyTagDragandDrop(page);
+    await keyTag.keyTag();
+  });
 
-test.describe('keyTagDragDrop', async () => {
-    test('KeyTag - Action', async ({ keyTagDragDrop }) => {
-        await keyTagDragDrop.keyTag()
-    })
-    test("Tag Box", async ({ tagbox }) => {
-        await tagbox.tagbox()
-    })
-
-    test.afterEach('Test Closure', async ({ keyTagDragDrop }) => {
-        await keyTagDragDrop.page.close()
-    })
-})
-
+  test('Tag Box', async ({ page }) => {
+    await page.goto('/');
+    const keyTag = new KeyTagDragandDrop(page);
+    await keyTag.tagbox();
+  });
+});
