@@ -1,5 +1,5 @@
 import { test } from '../Fixtures_UI/AdvancedInteractions'
-
+//test
 test('NewTab', async ({ AdvancedInteractions }) => {
         await AdvancedInteractions.newtab()
     })
