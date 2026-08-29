@@ -16,6 +16,7 @@ export const test = base.extend<testFixture>({
     InputField: async ({ page,InputFieldurl }, use) => {
         const InputField = new inputField(page)
         use(InputField)
+        //asdadedas
     }
 
 })
